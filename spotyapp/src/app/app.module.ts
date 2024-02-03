@@ -10,6 +10,12 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+
+import { CardsComponent } from './components/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
